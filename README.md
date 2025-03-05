@@ -55,11 +55,8 @@ cat /etc/hostname
 ## OUTPUT:
 ### REG NUMBER:212223040122
 ### NAME:MUTHULAKSHMI D
-![Screenshot 2024-11-16 150447](https://github.com/user-attachments/assets/4bd6c4b6-d75e-4db8-9549-641ba4f2f9d6)
+![image](https://github.com/user-attachments/assets/4d275ccb-71fa-46b3-b958-85ac41f3272a)
 
- ![WhatsApp Image 2024-11-20 at 21 54 45_5711b0a1](https://github.com/user-attachments/assets/769a6538-7e92-4ef3-be0d-62cad37e4064)
-
- Include your Screenshots Here.
 ## RESULT:  
 Successfully installed CentOS on a virtual machine using VirtualBox or VMware, providing a fully functional CentOS environment for testing and development.
 
