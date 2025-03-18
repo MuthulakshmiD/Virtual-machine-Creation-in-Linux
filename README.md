@@ -1,68 +1,134 @@
-# VIRTUAL MACHINE CREATION IN LINUX
-## NAME: MUTHULAKSHMI D
-## REG NUMBER: 212223040122
+ # VIRTUAL MACHINE CREATION IN LINUX
+
+#### REG NUMBER: 212223040025
+#### NAME: BASKAR J
+
 ## AIM
-To Install Virtualbox / VMware Workstation with different flavours of linux.
+
+To Install Virtualbox / VMware Workstation and execute basic Linux commands like pwd, mkdir, ls, date, cat, and writing a Bash script to perform arithmetic operations and read a file from the terminal.
+
 ## PROBLEM STATEMENT
-Explain about the Experiment.
-This experiment involves setting up a virtual machine with CentOS, a popular Linux distribution. This setup allows users to practice Linux commands, test applications, and develop software in a virtualized environment without affecting the host system.
+
+Manually executing basic Linux tasks like file management, navigation, and arithmetic operations can be inefficient. This experiment aims to automate these tasks using Bash scripting, including:
+1. Displaying the current directory, files, and system date.
+2. Reading and displaying file contents.
+3. Performing basic arithmetic operations.
+
+## REQUIREMENTS
+- Oracle VM VirtualBox Manager
+- Kali Linux
+- Mousepad (Text Editor)
+- Terminal
 
 ## ALGORITHM
- ### Steps 1:
- Open VirtualBox or VMware Workstation
- ### Steps 2:
- Go to File -> New to create a new virtual machine.
- ### Steps 3:
- Enter a name for your CentOS VM.Choose Linux as the type and CentOS as the version (or select the closest option available if CentOS is not listed).
- ### Steps 4:
-Select the CentOS ISO image you downloaded.
-Set the base memory to 1024 MB (1 GB)
-Allocate 1 processor core
-Set the disk size to at least 20 GB
-Complete the configuration by clicking Finish to create the virtual machine
- ### Steps 5:
-Select the created VM, go to Details (or Settings), and navigate to the Network tab.
-Configure Adapter 1 as NAT (for internet access through the host).
-Configure Adapter 2 as Bridged Adapter (for direct access to the local network, if needed).
-Click OK to save network settings.
-## Step 6:
-Click Start to boot up the newly created virtual machine.
-During installation, set a password for the root user.
-After logging in to CentOS, open a terminal to start using the command line.
+ ### Step 1: 
+ Open the terminal in Kali Linux.
+ ### Step 2:
+ Use basic Linux commands to navigate and manage files.
+ ### Step 3:
+ Create a Bash script using Mousepad.
+ ### Step 4:
+ Write a script that performs arithmetic operations and reads a file.
+ ### Step 5:
+ Make the script executable.
+ ### Step 6:
+ Run the script and observe the output.
+ 
 ## COMMANDS
-Include the commands used in the Experiment.
-### Switch to User:
-```su username```
-### View IP Address:
-``` ip a ```
-#### Create a Directory:
+
+###  Execute Basic Linux Commands in the Terminal
+#### Check the Current Working Directory
 ```
-mkdir <directory_name>
+pwd
 ```
-#### Change to the New Directory:
+#### Create a New Directory
 ```
-cd <directory_name>
-```
-#### Edit the Hostname File:
-```
-vi /etc/hostname
-```
-#### View the Content of the Hostname File:
-```
-cat /etc/hostname
+mkdir my_experiment
 ```
 
-## OUTPUT:
-### REG NUMBER:212223040122
-### NAME:MUTHULAKSHMI D
-![image](https://github.com/user-attachments/assets/4d275ccb-71fa-46b3-b958-85ac41f3272a)
+#### Navigate into the Directory
+```
+cd my_experiment
+```
+#### List the Files in the Directory
+```
+ls
+```
 
-## RESULT:  
-Successfully installed CentOS on a virtual machine using VirtualBox or VMware, providing a fully functional CentOS environment for testing and development.
+#### Write Some Text into the File
+```
+echo "Hello, this is a test file." > myfile.txt
+```
+
+#### Read the File Contents
+```
+cat myfile.txt
+```
+#### Get the Current Date and Time
+```
+date
+```
+
+###  Writing a Bash Script in Mousepad
+#### Open Mousepad
+```
+mousepad script.sh &
+```
+
+#### Write the Bash Script
+
+```
+#!/bin/bash 
+
+echo "Current Directory:"
+pwd
+
+echo "Files in this directory:"
+ls
+
+echo "Current Date and Time:"
+date
+
+read -p "Enter first number: " num1
+read -p "Enter second number: " num2
+
+sum=$((num1 + num2))
+diff=$((num1 - num2))
+prod=$((num1 * num2))
+quot=$((num1 / num2))
+rem=$((num1 % num2))
+
+echo "Sum: $sum"
+echo "Difference: $diff"
+echo "Product: $prod"
+echo "Quotient: $quot"
+echo "Remainder: $rem"
+
+
+```
+####  Make the Script Executable
+```
+chmod +x script.sh
+```
+
+#### Run the Script
+```
+./script.sh
+```
+
+## OUTPUT
+
+Configuration of Kali Linux on Oracle Virtual Box :
+
+![image](https://github.com/user-attachments/assets/83f47f18-6b45-4f19-8068-7bb8b1baf013)
+
+![image](https://github.com/user-attachments/assets/c826c649-a01f-494f-87f7-8e18991d85c8)
+
+![image](https://github.com/user-attachments/assets/f792e6d3-34b6-4608-b94b-55e636624177)
 
 
 ## RESULT
- Successfully installed CentOS on a virtual machine using VirtualBox or VMware, providing a fully functional CentOS environment for testing and development.
+Thus, this experiment helped in understanding the fundamentals of Linux commands and Bash scripting for automation and system management.
 
   
 
